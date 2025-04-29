@@ -151,6 +151,6 @@ public struct BaseConfiguration: Codable, Sendable {
 
     enum CodingKeys: String, CodingKey {
         case modelType = "model_type"
-        case quanitzationContainer = "quantization"
+        case quantizationContainer = "quantization"
     }
 }
