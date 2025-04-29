@@ -138,15 +138,15 @@ public struct BaseConfiguration: Codable, Sendable {
         }
     }
 
-    var quanitzationContainer: QuantizationContainer?
+    var quantizationContainer: QuantizationContainer?
 
     @available(*, deprecated, message: "Please use perLayerQuantization instead")
     public var quantization: Quantization? {
-        quanitzationContainer?.quantization
+        quantizationContainer?.quantization
     }
 
     public var perLayerQuantization: PerLayerQuantization? {
-        quanitzationContainer?.perLayerQuantization
+        quantizationContainer?.perLayerQuantization
     }
 
     enum CodingKeys: String, CodingKey {
