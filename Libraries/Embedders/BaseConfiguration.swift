@@ -140,6 +140,7 @@ public struct BaseConfiguration: Codable, Sendable {
 
     var quanitzationContainer: QuantizationContainer?
 
+    @available(*, deprecated, message: "Please use perLayerQuantization instead")
     public var quantization: Quantization? {
         quanitzationContainer?.quantization
     }
