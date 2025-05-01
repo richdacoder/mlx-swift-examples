@@ -4,7 +4,7 @@ import Foundation
 
 public enum StringOrNumber: Codable, Equatable, Sendable {
     case string(String)
-    case float(Float)
+    case float(Float) 
 
     public init(from decoder: Decoder) throws {
         let values = try decoder.singleValueContainer()
